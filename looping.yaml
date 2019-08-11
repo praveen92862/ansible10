@@ -2,11 +2,11 @@
  - host: all
    become: yes
    tasks:
-    - name: looping
-      apt:
+   - name: looping
+     apt:
        name: "{{item}}"
        state: present
-      with_items:
+     with_items:
         - wget:
         - git:
         - tree:
