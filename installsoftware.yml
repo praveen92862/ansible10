@@ -3,6 +3,6 @@
   become: yes
   tasks:
   - name: install tree software
-    apt:
-     name: tree
-     state: present
+     apt:
+      name: tree
+      state: present
