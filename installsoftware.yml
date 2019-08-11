@@ -4,5 +4,5 @@
   tasks:
   - name: install tree software
     apt:
-    name: tree
-    state: present
+     name: tree
+     state: present
