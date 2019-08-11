@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install tree
+  - name: install git s/w
     apt:
-      name: tree
+      name: git
       state: present
