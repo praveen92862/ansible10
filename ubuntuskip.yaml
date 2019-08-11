@@ -1,0 +1,27 @@
+---
+ - hosts: all
+   become: yes
+   tasks:
+   - name: looping
+     yum:
+       name: "{{item}}"
+       state: present
+     with_items:
+        - wget
+        - git
+        - tree
+     tags:
+     - yummodule
+
+
+   
+   - name: looping
+     apt:
+       name: "{{item}}"
+       state: present
+     with_items:
+        - wget
+        - git
+        - tree
+     tags:
+     - aptmodule
