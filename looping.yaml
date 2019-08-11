@@ -1,0 +1,15 @@
+---
+ - myhost: all
+   become: yes
+   tasks:
+    - name: looping
+      apt:
+       name: "{{item}}"
+       state: present
+      with_items:
+        - wget:
+        - git:
+        - tree:
+
+
+
