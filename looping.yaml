@@ -7,9 +7,9 @@
        name: "{{item}}"
        state: present
      with_items:
-        - wget:
-        - git:
-        - tree:
+        - wget
+        - git
+        - tree
 
 
 
