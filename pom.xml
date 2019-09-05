@@ -1,0 +1,12 @@
+<project>
+
+<modelVersion>4.0.0</modelVersion>
+
+<artifactId>HelloWorld</artifactId>
+
+<groupId>org.praveen</groupId>
+
+<version>1.0</version>
+
+<packaging>jar</packaging>
+</project>
